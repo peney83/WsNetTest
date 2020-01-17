@@ -1,0 +1,20 @@
+b'before install\n'
+b'initializing config...\n'
+b'Using config file: C:\\Users\\MI\\Qsync\\shining3d\\code\\WsNetTest\\testcases\\../sdk/dist\\.server.json\n'
+b'[bbolt.bucket.devices http.static.logsdkurlprefix localexe.licensepath localexe.path localfile.retryuploadinterval device.boardid global.savepath.limit.download global.savepath.dlp localexe.logpath localexe.sockname localfile.informfrontinterval bbolt.bucket.tracings bbolt.bucket.osi http.static.path localfile.path log.output device.ap.ssid http.dsurl http.static.lognsurlprefix down.worker global.softs ws.servertopic ws.deviceservercmd ws.writewait log.maxage cron.statistics cron.informfront localexe.ollogpath api.defaultpagesize api.taobao.appsecret bbolt.path bbolt.bucket.msgoffline http.static.jiurlprefix http.static.jipath log.level device.modelcode http.debugurl http.debugoffurl log.localtime bbolt.bucket.serverpushmsg bbolt.bucket.informfront bbolt.bucket.lastscore global.savepath.calibration api.taobao.url api.taobao.appkey bbolt.bucket.softs http.static.logolurlprefix http.static.fileurlprefix cron.crononstatus version log.path http.static.urlprefix http.fsurl cron.crononsoft global.savepath.update global.savepath.ple localfile.validbookperiod bbolt.bucket.permanttracings bbolt.bucket.serverpushmsgformrs down.chunksize global.savepath.limit.upload ws.maxmessagesize log.max qrcode.urlprefix localfile.deletelife cron.crononsoftd api.taobao.resultmeasurelength mode bbolt.bucket.serverpushmsgform cron.crononclearexpirefile ws.durlprefix qrcode.size localexe.sdklogpath api.taobao.token cron.crononsoftdi localexe.nslogpath localfile.loginterval device.ap.pwd bbolt.bucket.downloadrecords http.port http.static.logurlprefix ws.urlprefix]\n'
+b'initializing logger...\n'
+b'starting service ...\n'
+b'starting single check...\n'
+b'starting single footer-ali_socks check...\n'
+b"NewLocalSocket check err:  Timed out waiting for pipe '\\\\.\\pipe\\footer-ali_socks' to come available\n"
+b"single check err:  Timed out waiting for pipe '\\\\.\\pipe\\footer-ali_socks' to come available  for sock  footer-ali_socks\n"
+b'starting init db...\n'
+b'finish startup bbolt on  bbolt.db\n'
+b'end init db...\n'
+b'startup local socket...\n'
+b'starting socket server footer-ali...\n'
+====start
+test_run
+terminate footer-ali.exe
+Active code page: 65001
+SUCCESS: The process "footer-ali.exe" with PID 3220 has been terminated.

@@ -1,0 +1,8 @@
+---
+client_url:
+  aliscan:  ws://127.0.0.1:8080/aliscan
+  dscan:    ws://127.0.0.1:8080/dscan
+
+pad:
+  id1: 100001
+  id2: 100002

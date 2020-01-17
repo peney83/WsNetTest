@@ -1,0 +1,23 @@
+{
+    "modelCode":"XXX",
+    "adaptiveModel":"einscan-pro,einscan-plus",
+    "adaptiveModular":"",
+    "file":"xxx",
+    "lang":"",
+    "type":"", // install_package/patch/firmware/other
+    "env":"", // release/beta
+    "maxVersion":"",
+    "minVersion":"",
+    "os":"win",
+    "overwrite":"y",
+    "version":"2.7.0.6",
+    "other": {
+        "algorighmVer":"1.0.0", 
+        "sdkVer":"1.0.0", 
+        "communityVer":"1.0.0", 
+        "firmwareVer":"1.0.0",
+        "frontVer":"1.0.0"
+    }, 
+    "versionCNLog":"xxx",
+    "versionLog":"xxx"
+}

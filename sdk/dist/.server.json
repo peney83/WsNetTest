@@ -1,0 +1,147 @@
+{
+    "log": {
+        "output": "file",
+        "path": "logs/fa.log",
+        "level": "info",
+        "max": 10,
+        "maxAge": 30,
+        "localtime": true
+    },
+    "bbolt": {
+        "path": "bbolt.db",
+        "bucket": {
+            "downloadRecords":"download_records",
+		    "informFront":"inform_front",
+            "msgOffline":"offline_msg",
+            "softs":"softs",
+            "devices":"devices",
+            "tracings":"tracings",
+            "permantTracings":"permant_tracings",
+            "lastScore":"last_score",
+            "osi":"osi",
+            "serverPushMsg":"spm",
+            "serverPushMsgForm":"spmf",
+            "serverPushMsgFormRS":"spmfrs"
+        }
+    },
+    "global":{
+        "softs": [{
+            "modelCode":"foot3dscan",
+            "maxPatch": 10,
+            "type":"", 
+            "productLine":"scan",
+            "cdnUrl": "https://cdnimg.shining3d.com/software/scan/interface.json",
+            "upgradeMode":"ignore",
+            "version":"1.3.0.0",
+            "other": {
+                "algorighmVer":"1.0.0", 
+                "sdkVer":"1.0.0", 
+                "communityVer":"1.4.1.9", 
+                "firmwareVer":"15.0.0",
+                "frontVer":"1.0.0"
+            }, 
+            "autoDownload":true,
+            "env":"beta"
+        },{
+            "modelCode":"foot3dscanfirmware",
+            "maxPatch": 10,
+            "type":"", 
+            "productLine":"scan",
+            "cdnUrl": "https://cdnimg.shining3d.com/software/scan/interface.json",
+            "upgradeMode":"ignore",
+            "version":"14.0.0.0",
+            "autoDownload":true,
+            "env":"beta"
+        }],
+        "savePath":{
+            "update":"tmp/update",
+            "ple":"tmp/ple",
+            "dlp":"tmp/dlp",
+            "calibration":"tmp/calibration",
+            "limit":{
+                "upload": 10,
+                "download": 10
+            }
+        }
+    },
+    "http": {
+        "port": ":8080",
+        "static": {
+            "path": "tmp/static",
+            "jiPath": "tmp/ji",
+            "urlPrefix": "/",
+            "fileUrlPrefix": "/f",
+            "jiUrlPrefix": "/ji",
+            "logUrlPrefix": "/l",
+            "logSdkUrlPrefix": "/s",
+            "logNSUrlPrefix": "/ns",
+            "logOLUrlPrefix": "/ol"
+        },
+        "debugUrl": "/debug",
+        "debugOffUrl": "/debugoff",
+        "fsUrl": "/wsmsg",
+        "dsUrl": "/dsmsg"
+    },
+    "ws": {
+        "urlPrefix": "/aliscan",
+        "serverTopic":["equipment/scan/action","equipment/wifi/list","equipment/wifi/qst","equipment/wifi/disconnect", "equipment/wifi/connect", "equipment/scan/new", "equipment/calibration/new","files/scan/list","files/scan/action","equipment/store/bind","equipment/store/unbind","files/scan/uinfo","equipment/store/brand","equipment/store/list","equipment/store/get","inform/upgradeResponse","equipment/debugEnable","equipment/uploadLog","equipment/checkUDisk","equipment/copyLog","equipment/deviceInfo"],
+        "dUrlPrefix":"/dscan",
+        "deviceServerCmd":["wifiListResult","wifiStatusResult","deviceStatusResult", "diskIdResult", "scanResult", "uploadResult","removeFile","calibrationResult","softUp","deviceUp","licenseResult","logAlert","log","checkUDiskResult","copyLogResult","otaUpgradable","cloudData"],
+        "writeWait": 60,
+        "maxMessageSize": 51200000
+    },
+    "api":{
+        "defaultPageSize": 10,
+        "taobao":{
+            "url":"https://gw.api.tbsandbox.com/router/rest",
+            "appKey":"1025823871",
+            "appSecret":"sandboxc61681d9d947538e7e6d81457",
+            "token":"a15e03698369fbdaae90381e382fba15",
+            "resultMeasureLength": 1
+        }
+    },
+    "device":{
+        "boardId":"xxx",
+        "modelCode":"xxx",
+        "ap":{
+            "ssid":"zbb-hahaha-rc",
+            "pwd":"FootScan"
+        }
+    },
+    "localExe": {
+        "path": "tmp/a.exe",
+        "logPath": "logs",
+        "sdkLogPath": "../scanner/footscansdk_log",
+        "nsLogPath": "../scanner/logs",
+        "olLogPath": "../OnlineUpdate/logs",
+        "licensePath": "tmp/license",
+        "sockName": "footer-ali"
+    },
+    "qrCode": {
+        "size": 256,
+        "urlPrefix": "https://market.waptest.taobao.com/app/web/feet-model-customer-offline/index.html?reportData="
+    },
+    "down":{
+        "chunkSize": 10,
+        "worker": 10
+    },
+    "localFile": {
+        "path": "tmp/files",
+        "retryUploadInterval": "30m",
+        "validBookPeriod": "3m",
+        "deleteLife": "30d",
+        "informFrontInterval": "1m",
+        "logInterval": "7d"
+    },
+    "mode": "dev",
+    "version":"1.4.1.10", 
+    "cron":{
+        "cronOnSoft": "@every 5h",
+        "cronOnStatus": "@every 5m",
+        "cronOnSoftDI": "@every 4h",
+        "cronOnSoftD": "@every 5h",
+        "cronOnClearExpireFile": "@every 1h",
+        "statistics": "@every 10m",
+	    "informFront": true
+    }
+}

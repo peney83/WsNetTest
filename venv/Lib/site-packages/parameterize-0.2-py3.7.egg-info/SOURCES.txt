@@ -1,0 +1,13 @@
+.gitignore
+.travis.yml
+LICENSE.txt
+README.md
+ez_setup.py
+parameterize.py
+setup.cfg
+setup.py
+tests.py
+parameterize.egg-info/PKG-INFO
+parameterize.egg-info/SOURCES.txt
+parameterize.egg-info/dependency_links.txt
+parameterize.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: parameterize
+Version: 0.2
+Summary: a Python implementation of parameterize and SRFI 39
+Home-page: http://github.com/agrif/parameterize
+Author: Aaron Griffith
+Author-email: aargri@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: parameters,parameterize,dynamic scope
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
